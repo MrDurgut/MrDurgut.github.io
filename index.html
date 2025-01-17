@@ -1,9 +1,707 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <script data-ad-client="ca-pub-2518391379644467" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
-    </head>
-    <body>
-        <h1>Enes Durgut</h1>
-    </body>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enes Durgut</title>
+    <link rel="icon" href="img/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" media="(max-width: 500px)" href="mobile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="animations.css">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+
+<body>
+    <div class="loader-wrapper">
+        <div class="loader"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-brand">
+            <h1>ED</h1>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Anasayfa</a></li>
+            <li><a href="#hedefler">Projeler</a></li>
+            <li><a href="#teknolojiler">Teknolojiler</a></li>
+            <li><a href="#portfolio">Portfolyo</a></li>
+            <li><a href="#iletisim">İletişim</a></li>
+        </ul>
+        <div class="nav-controls">
+            <div class="lang-switch">
+                <button class="lang-btn active">TR</button>
+                <button class="lang-btn">EN</button>
+            </div>
+            <button class="theme-toggle" aria-label="Theme Toggle">
+                <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+                </svg>
+                <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke="currentColor" style="display: none;">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z" />
+                </svg>
+            </button>
+        </div>
+        <div class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <div class="welcomePage" id="home" data-aos="fade-up">
+        <div id="particles-js"></div>
+        <div id="bear-container"></div>
+        <div class="welcome-content" data-aos="fade-up" data-aos-delay="400">
+            <h1 class="welcomeHeader">Enes Durgut</h1>
+            <p class="welcomeP">Uludağ Üniversitesi Bilgisayar Mühendisliği Öğrencisi</p>
+            <div class="welcome-buttons">
+                <a href="#teknolojiler" class="welcomeB">Bildiğim Teknolojiler</a>
+                <a href="#hedefler" class="welcomeB">Projeler</a>
+                <a href="#portfolio" class="welcomeB">Portfolyo</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="projelerPage" id="hedefler">
+        <h2 class="projeler-header" data-aos="fade-up">Projeler</h2>
+        <div class="projeler-grid">
+            <div class="proje-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="proje-icon">🪚</div>
+                <h3 class="proje-title">Kereste Fiyat Hesaplama</h3>
+                <p class="proje-desc">Kereste firmaları için geliştirilmiş, detaylı fiyat hesaplama ve analiz yapabilen
+                    profesyonel yazılım çözümü.</p>
+            </div>
+
+            <div class="proje-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="proje-icon">🚚</div>
+                <h3 class="proje-title">Kurye & POS</h3>
+                <p class="proje-desc">Kurye takibi ve mobil POS özelliklerini birleştiren, işletmeler için entegre
+                    edilmiş modern çözüm.</p>
+            </div>
+
+            <div class="proje-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="proje-icon">🎮</div>
+                <h3 class="proje-title">Game Store Simulator</h3>
+                <p class="proje-desc">Oyun mağazası işletme deneyimini simüle eden, stratejik kararlar almanızı
+                    gerektiren eğlenceli bir simülasyon oyunu.</p>
+            </div>
+
+            <div class="proje-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="proje-icon">📱</div>
+                <h3 class="proje-title">Günlük Planlayıcı</h3>
+                <p class="proje-desc">Günlük aktivitelerinizi organize etmenize yardımcı olan, kullanıcı dostu ve
+                    özelleştirilebilir mobil uygulama.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="techPage" id="teknolojiler">
+        <h2 class="tech-header" data-aos="fade-up">Teknolojiler</h2>
+
+        <div class="tech-grid">
+            <!-- Frontend -->
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML5">
+                <p>HTML5</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS3">
+                <p>CSS3</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                    alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                    alt="TypeScript">
+                <p>TypeScript</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="500">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+                <p>React</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="600">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vuejs/vuejs-original.svg" alt="Vue">
+                <p>Vue</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="700">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/angularjs/angularjs-original.svg"
+                    alt="Angular">
+                <p>Angular</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="800">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                    alt="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="900">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original-wordmark.svg"
+                    alt="Tailwind">
+                <p>Tailwind</p>
+            </div>
+
+            <!-- Backend -->
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1000">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js">
+                <p>Node.js</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" alt="PHP">
+                <p>PHP</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+                <p>Python</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" alt="C#">
+                <p>C#</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java">
+                <p>Java</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1500">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dotnetcore/dotnetcore-original.svg"
+                    alt=".NET">
+                <p>.NET</p>
+            </div>
+
+            <!-- Mobile -->
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1600">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                    alt="Flutter">
+                <p>Flutter</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1700">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg" alt="Dart">
+                <p>Dart</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1800">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                    alt="React Native">
+                <p>React Native</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="1900">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xamarin/xamarin-original.svg"
+                    alt="Xamarin">
+                <p>Xamarin</p>
+            </div>
+
+            <!-- Database -->
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2000">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
+                <p>MySQL</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2100">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/microsoftsqlserver/microsoftsqlserver-plain.svg"
+                    alt="MSSQL">
+                <p>MSSQL</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2200">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                    alt="PostgreSQL">
+                <p>PostgreSQL</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2300">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg"
+                    alt="Firebase">
+                <p>Firebase</p>
+            </div>
+
+            <!-- Tools -->
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2400">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git">
+                <p>Git</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2500">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                <p>Figma</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2600">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unity/unity-original.svg" alt="Unity">
+                <p>Unity</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2700">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" alt="Linux">
+                <p>Linux</p>
+            </div>
+            <div class="tech-card" data-aos="zoom-in" data-aos-delay="2800">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" alt="Bash">
+                <p>Bash</p>
+            </div>
+        </div>
+
+        <div class="skills-container">
+            <!-- Frontend Skills -->
+            <div class="skill-group">
+                <h3>Frontend</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>HTML/CSS</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>TypeScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Angular</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Bootstrap</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Tailwind CSS</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Vue.js</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Backend Skills -->
+            <div class="skill-group">
+                <h3>Backend</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Node.js</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>PHP</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>.NET</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>C#</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Mobile Development -->
+            <div class="skill-group">
+                <h3>Mobil Geliştirme</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Flutter</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Dart</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>React Native</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Xamarin</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Database -->
+            <div class="skill-group">
+                <h3>Veritabanı</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MySQL</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>MSSQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Firebase</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>PostgreSQL</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Oyun Geliştirme -->
+            <div class="skill-group">
+                <h3>Oyun Geliştirme</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Unity</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>C# Game Dev</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Genel -->
+            <div class="skill-group">
+                <h3>Genel</h3>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Python</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="85%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Java</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Git</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="90%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Figma</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Linux</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="80%"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-info">
+                        <span>Bash</span>
+                        <span>75%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-fill" data-width="75%"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="portfolio-section" id="portfolio">
+        <h2 class="portfolio-header" data-aos="fade-up">Portfolio</h2>
+        <div class="portfolio-filters" data-aos="fade-up" data-aos-delay="200">
+            <button class="filter-btn active" data-filter="all">Tümü</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="mobile">Mobil</button>
+            <button class="filter-btn" data-filter="game">Oyun</button>
+        </div>
+        <div class="portfolio-grid">
+            <div class="portfolio-item" data-project="kereste" data-category="web">
+                <img src="https://picsum.photos/400/300?random=1" alt="Kereste Projesi">
+                <div class="portfolio-content">
+                    <h3>Kereste Fiyat Hesaplama</h3>
+                    <p>Kereste firmaları için profesyonel yazılım çözümü</p>
+                    <button class="detail-btn">Detayları Gör</button>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="kurye" data-category="mobile">
+                <img src="https://picsum.photos/400/300?random=2" alt="Kurye Projesi">
+                <div class="portfolio-content">
+                    <h3>Kurye & POS Uygulaması</h3>
+                    <p>Kurye takip ve sipariş yönetimi için mobil uygulama</p>
+                    <button class="detail-btn">Detayları Gör</button>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="game" data-category="game">
+                <img src="https://picsum.photos/400/300?random=3" alt="Game Store Projesi">
+                <div class="portfolio-content">
+                    <h3>Video Game Store</h3>
+                    <p>Unity ile geliştirilmiş oyun mağazası simülasyonu</p>
+                    <button class="detail-btn">Detayları Gör</button>
+                </div>
+            </div>
+            <div class="portfolio-item" data-project="planner" data-category="mobile">
+                <img src="https://picsum.photos/400/300?random=4" alt="Planlama Projesi">
+                <div class="portfolio-content">
+                    <h3>Günlük Planlama Uygulaması</h3>
+                    <p>Günlük aktiviteleri planlamak için mobil uygulama</p>
+                    <button class="detail-btn">Detayları Gör</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="projectModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-header">
+                <h2 class="modal-title">Proje Detayı</h2>
+            </div>
+            <div class="modal-body">
+                <div class="project-images">
+                    <div class="slider">
+                        <img src="" alt="Proje Görseli" class="slider-image">
+                        <button class="slider-btn prev">&#10094;</button>
+                        <button class="slider-btn next">&#10095;</button>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <div class="info-section">
+                        <h3>Proje Hakkında</h3>
+                        <p class="project-description"></p>
+                    </div>
+                    <div class="info-section">
+                        <h3>Problem & Çözüm</h3>
+                        <div class="problem-solution">
+                            <div>
+                                <h4>Problem</h4>
+                                <p class="project-problem"></p>
+                            </div>
+                            <div>
+                                <h4>Çözüm</h4>
+                                <p class="project-solution"></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-section">
+                        <h3>Kullanılan Teknolojiler</h3>
+                        <div class="project-tech-stack"></div>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="demo-link" target="_blank">Canlı Demo</a>
+                        <a href="#" class="github-link" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contactPage" id="iletisim">
+        <div class="contact-container" data-aos="fade-up">
+            <h2 class="contact-header">İletişime Geç</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">İsim</label>
+                    <input type="text" id="name" placeholder="İsminizi giriniz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-posta</label>
+                    <input type="email" id="email" placeholder="E-posta adresinizi giriniz" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Konu</label>
+                    <input type="text" id="subject" placeholder="Mesajınızın konusu" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Mesaj</label>
+                    <textarea id="message" placeholder="Mesajınızı buraya yazın..." required></textarea>
+                </div>
+
+                <button type="submit" class="submit-btn">Gönder</button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Hakkımda</h3>
+                <p>Bilgisayar Mühendisliği öğrencisiyim. Full-stack web geliştirme, mobil uygulama geliştirme ve oyun
+                    geliştirme alanlarında kendimi geliştiriyorum.</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Hızlı Linkler</h3>
+                <p><a href="#home">Anasayfa</a></p>
+                <p><a href="#hedefler">Projeler</a></p>
+                <p><a href="#teknolojiler">Teknolojiler</a></p>
+                <p><a href="#iletisim">İletişim</a></p>
+            </div>
+
+            <div class="footer-section">
+                <h3>İletişim</h3>
+                <p>📧 mail@example.com</p>
+                <p>📱 +90 555 555 55 55</p>
+                <p>📍 Bursa, Türkiye</p>
+            </div>
+
+            <div class="footer-section">
+                <h3>Sosyal Medya</h3>
+                <div class="social-links">
+                    <a href="#" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                            alt="GitHub" style="width: 24px; filter: invert(1);">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
+                            alt="LinkedIn" style="width: 24px;">
+                    </a>
+                    <a href="#" target="_blank">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg"
+                            alt="Twitter" style="width: 24px;">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Enes Durgut. Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+    <div class="scroll-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
+        </svg>
+    </div>
+    <script src="script.js"></script>
+</body>
+
 </html>
