@@ -132,18 +132,6 @@ function updateBearLighting(theme) {
     scene.add(frontLight);
 }
 
-// Progress bar animasyonu - en basit hali
-document.addEventListener('DOMContentLoaded', () => {
-    const skillFills = document.querySelectorAll('.skill-fill');
-    
-    skillFills.forEach(fill => {
-        const width = fill.getAttribute('data-width');
-        setTimeout(() => {
-            fill.style.width = width;
-        }, 500);
-    });
-});
-
 // Portfolio filter
 const filterButtons = document.querySelectorAll('.filter-btn');
 const portfolioItems = document.querySelectorAll('.portfolio-item');
@@ -184,7 +172,7 @@ const translations = {
         technologies: "Teknolojiler",
         portfolyo: "Portfolyo",
         contact: "İletişim",
-        welcomeText: "Bilgisayar Mühendisliği öğrencisiyim. Full-stack web geliştirme, mobil uygulama geliştirme ve oyun geliştirme alanlarında kendimi geliştiriyorum.",
+        welcomeText: "Full Stack Web Developer",
         exploreButton: "Bildiğim Teknolojiler",
         projectsTitle: "Projeler",
         technologiesTitle: "Teknolojiler",
@@ -221,7 +209,7 @@ const translations = {
         technologies: "Technologies",
         portfolyo: "Portfolio",
         contact: "Contact",
-        welcomeText: "I am a Computer Engineering student developing myself in full-stack web development, mobile app development, and game development.",
+        welcomeText: "Full Stack Web Developer",
         exploreButton: "Technologies I Know",
         projectsTitle: "Projects",
         technologiesTitle: "Technologies",
